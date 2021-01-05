@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/itsgreggreg/language-gleam",
   "author": "greggreg",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
 }
