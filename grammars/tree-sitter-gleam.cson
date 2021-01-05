@@ -1,0 +1,35 @@
+me: 'Gleam'
+scopeName: 'gleam'
+type: 'tree-sitter'
+parser: 'tree-sitter-mylanguage'
+
+fileTypes: [
+  'gleam',
+]
+
+comments:
+  start: '// '
+
+scopes:
+ '"pub"': 'storage.modifier.pub'
+ '"type"': 'storage.modifier.type'
+ '"import"': 'keyword.import'
+ 'module_name': 'entity.name.module'
+ 'type_identifier': 'support.storage.type'
+ 'type_variable': 'support.variable'
+ 'identifier': 'support.variable'
+ 
+
+folds: [
+ { type: 'comment' }
+
+  {
+   type: 'type_decl',
+   start: {type: '"{"'},
+   end: {type: '"}"'}
+  }
+]
+
+
+ 
+
