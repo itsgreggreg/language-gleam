@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Gleam language support in Atom",
   "main": "index.js",
-  "repository": "https://gitlab.com/greggreg/language-gleam",
+  "repository": "https://github.com/itsgreggreg/language-gleam",
   "author": "greggreg",
   "license": "MIT"
 }
