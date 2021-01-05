@@ -15,6 +15,6 @@
     "node": "*"
   },
   "dependencies": {
-    "tree-sitter-gleam": "^0.1.2"
+    "tree-sitter-gleam": "^0.1.3"
   }
 }
