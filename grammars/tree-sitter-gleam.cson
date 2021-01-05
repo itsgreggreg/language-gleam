@@ -1,7 +1,7 @@
 me: 'Gleam'
 scopeName: 'gleam'
 type: 'tree-sitter'
-parser: 'tree-sitter-mylanguage'
+parser: 'tree-sitter-gleam'
 
 fileTypes: [
   'gleam',
