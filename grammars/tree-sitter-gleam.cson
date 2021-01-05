@@ -1,4 +1,4 @@
-me: 'Gleam'
+name: 'Gleam'
 scopeName: 'gleam'
 type: 'tree-sitter'
 parser: 'tree-sitter-gleam'
@@ -21,7 +21,9 @@ scopes:
  
 
 folds: [
- { type: 'comment' }
+  {
+    type: 'comment'
+  }
 
   {
    type: 'type_decl',
