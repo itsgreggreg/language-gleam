@@ -7,6 +7,10 @@
   "author": "greggreg",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": "*",
+    "node": "*"
+  },
+  "dependencies": {
+    "tree-sitter-gleam": "^0.1.2"
   }
 }
