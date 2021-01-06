@@ -1,5 +1,5 @@
 name: 'Gleam'
-scopeName: 'gleam'
+scopeName: 'source.gleam'
 type: 'tree-sitter'
 parser: 'tree-sitter-gleam'
 
