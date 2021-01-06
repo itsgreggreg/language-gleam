@@ -20,7 +20,7 @@
     "node": "*"
   },
   "dependencies": {
-    "tree-sitter-gleam": "^0.1.3"
+    "tree-sitter-gleam": "^0.1.5"
   },
   "devDependencies": {
     "electron-rebuild": "^2.3.4",
