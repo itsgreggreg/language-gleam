@@ -11,6 +11,8 @@ comments:
   start: '// '
 
 scopes:
+  'comment': 'comment.block'
+ 
   '"as"'       : 'keyword.control.as'
   '"assert"'   : 'keyword.control.assert'
   '"case"'     : 'keyword.control.case'
