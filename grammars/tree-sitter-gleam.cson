@@ -11,27 +11,97 @@ comments:
   start: '// '
 
 scopes:
- '"pub"': 'storage.modifier.pub'
- '"type"': 'storage.modifier.type'
- '"import"': 'keyword.import'
- 'module_name': 'entity.name.module'
- 'type_identifier': 'support.storage.type'
- 'type_variable': 'support.variable'
- 'identifier': 'support.variable'
+  '"as"'       : 'keyword.control.as'
+  '"assert"'   : 'keyword.control.assert'
+  '"case"'     : 'keyword.control.case'
+  '"const"'    : 'keyword.control.const'
+  '"external"' : 'keyword.control.pub'
+  '"fn"'       : 'keyword.control.function'
+  '"if"'       : 'keyword.control.if'
+  '"import"'   : 'keyword.control.import'
+  '"let"'      : 'keyword.control.let'
+  '"opaque"'   : 'keyword.control.opaque'
+  '"pub"'      : 'keyword.control.pub'
+  '"todo"'     : 'keyword.control.todo'
+  '"try"'      : 'keyword.control.try'
+  '"tuple"'    : 'keyword.control.tuple'
+  '"type"'     : 'keyword.control.type'
+
+  'module_name'     : 'entity.name.module'
+  'type_identifier' : 'support.storage.type'
+  'type_variable'   : 'support.variable'
+  'identifier'      : 'support.variable'
+  'string_literal'     : 'string.quoted.double'
+  'boolean_literal'    : 'constant.language.boolean'
+  'integer_literal'    : 'constant.numeric.decimal'
+  'float_literal'      : 'constant.numeric.decimal'
+
+  '"["': 'punctuation.definition.begin.bracket.square'
+  '"]"': 'punctuation.definition.end.bracket.square'
+  '","': 'punctuation.separator.delimiter'
+  '"{"': 'punctuation.section.block.begin.bracket.curly'
+  '"}"': 'punctuation.section.block.end.bracket.curly'
+  '"("': 'punctuation.section.parens.begin.bracket.round'
+  '")"': 'punctuation.section.parens.end.bracket.round'
+
+  '''
+   binary_expression > "+",
+   binary_expression > "-",
+   binary_expression > "/",
+   binary_expression > "*",
+   binary_expression > "+.",
+   binary_expression > "-.",
+   binary_expression > "/.",
+   binary_expression > "*.",
+   binary_expression > "%",
+  ''' : 'keyword.operator.math'
+
+  '''
+    compound_assignment_expr > "!=",
+    compound_assignment_expr > "==",
+  ''' : 'keyword.operator.cmp'
+
+  '''
+    binary_expression > "&&",
+    binary_expression > "||",
+  ''' : 'keyword.operator.logic.boolean'
+
+  '''
+    spread > "..",
+  ''' : 'keyword.operator.spread'
+
+  '''
+    case_branch > "|",
+  ''' : 'keyword.operator.alt_match'
+
+  '''
+    "->",
+  ''' : 'keyword.operator.misc'
+
  
+
+
+
+
 
 folds: [
   {
-    type: 'comment'
+    start: {index: 0, type: '{'}
+    end: {index: -1, type: '}'}
   }
-
   {
-   type: 'type_decl',
-   start: {type: '"{"'},
-   end: {type: '"}"'}
+    start: {index: 0, type: '['}
+    end: {index: -1, type: ']'}
+  }
+  {
+    start: {index: 0, type: '('}
+    end: {index: -1, type: ')'}
+  }
+  {
+    start: {index: 0, type: '<'}
+    end: {index: -1, type: '>'}
   }
 ]
-
 
  
 
