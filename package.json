@@ -1,6 +1,6 @@
 {
   "name": "language-gleam",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Gleam language support in Atom",
   "main": "./lib/main",
   "homepage": "https://github.com/itsgreggreg/language-gleam",
