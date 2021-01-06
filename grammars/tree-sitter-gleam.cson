@@ -27,8 +27,9 @@ scopes:
   '"tuple"'    : 'keyword.control.tuple'
   '"type"'     : 'keyword.control.type'
 
-  'module_identifier'  : 'support.variable.module'
+  'module_identifier'  : 'other'
   'type_identifier'    : 'support.storage.type'
+  'discard_identifier' : 'comment'
   'type_variable'      : 'support.variable.type'
   'identifier'         : 'support.variable.identifier'
   'string_literal'     : 'string.quoted.double'
