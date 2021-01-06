@@ -2,7 +2,7 @@
   "name": "language-gleam",
   "version": "0.5.0",
   "description": "Gleam language support in Atom",
-  "main": "index.js",
+  "main": "./lib/main",
   "homepage": "https://github.com/itsgreggreg/language-gleam",
   "repository": {
     "type": "git",
@@ -10,6 +10,11 @@
   },
   "author": "greggreg",
   "license": "MIT",
+  "keywords": [
+    "gleam",
+    "gleam-format",
+    "format"
+  ],
   "engines": {
     "atom": "*",
     "node": "*"
