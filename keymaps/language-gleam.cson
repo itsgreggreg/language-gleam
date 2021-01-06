@@ -1,0 +1,2 @@
+'atom-text-editor':
+    'ctrl-shift-m': 'language-gleam:format'
