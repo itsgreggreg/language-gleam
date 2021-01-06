@@ -16,5 +16,9 @@
   },
   "dependencies": {
     "tree-sitter-gleam": "^0.1.3"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^2.3.4",
+    "node-abi": "^2.19.3"
   }
 }
