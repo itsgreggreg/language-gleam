@@ -1,0 +1,44 @@
+'.source.gleam':
+
+  'Declare Import':
+    'prefix': 'im'
+    'body': """
+      import ${1}.{${2}}
+    """
+
+  'Declare Function':
+    'prefix': 'fun'
+    'body': """
+      ${1}fn ${2}(${3}) -> ${4} {
+        ${5}
+      }
+    """
+
+  'Declare Constant':
+    'prefix': 'const'
+    'body': """
+       ${1}const ${2} = ${3}
+    """
+
+  'Declare Custom Type':
+    'prefix': 'ct'
+    'body': """
+      ${1}type ${2} {
+        ${3}
+      }
+    """
+
+  'Declare Type Alias':
+    'prefix': 'ta'
+    'body': """
+      ${1}type ${2} = ${3}
+    """
+
+  'Declare External Function':
+    'prefix': 'efun'
+    'body': """
+      ${1}external fn ${2}(${3}) -> ${4} =
+        "${5}" "${6}"
+    """
+
+

@@ -1,7 +1,0 @@
-'.source.gleam':
-
-  'Declare Import':
-    'prefix': 'im'
-    'body': """
-      import ${1}.{${2}}
-    """
