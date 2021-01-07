@@ -95,10 +95,6 @@ folds: [
     start: {index: 0, type: '('}
     end: {index: -1, type: ')'}
   }
-  {
-    start: {index: 0, type: '<'}
-    end: {index: -1, type: '>'}
-  }
 ]
 
  
